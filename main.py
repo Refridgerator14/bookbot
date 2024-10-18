@@ -3,13 +3,13 @@ def main():
     text = get_book_text(book_path)
     word_count = count_words(text)
     char_count = count_characters(text)
-    print("--- Begin report of books/frankenstein.txt ---")
-    print(f"{word_count} words found in the document")
+    print(f"--- A(z) {book_path} beszámoló megkezdése ---")
+    print(f"{word_count} szó található a dokumentumban")
     print()
 
     for char_dict in characters_for_rep:
-        print(f"The '{char_dict['character']}' character was found {char_dict['count']} times")
-    print("--- End Report ---")
+        print(f"A(z) '{char_dict['character']}' betü {char_dict['count']} szerepel")
+    print("--- Beszámoló vége  ---")
 
 
 
